@@ -9,7 +9,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.create ({email: "loliart@gmail.com", password: "loliart22"})
 
-User.create ({email: "loliart@gmail.com", password: "loliart22"})
+User.create ({email: "lolocoder@gmail.com", password: "lolocoder22"})
 
-User.create ({email: "loliart@gmail.com", password: "loliart22"})
+User.create ({email: "aidacopy@gmail.com", password: "aidacopy22"})
 
