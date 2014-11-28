@@ -1,0 +1,12 @@
+<h1>Advert</h1>
+
+<p><strong>Title:</strong> <%= @advert.title %></p>
+<p><%= @advert.description %></p>
+
+<% if current_user %>
+  <p><%= link_to 'Contact', '#' %></p>
+<% else %>
+  <p>Not registered!</p>
+<% end %>
+
+<p><%= link_to 'Go back', adverts_path %></p>

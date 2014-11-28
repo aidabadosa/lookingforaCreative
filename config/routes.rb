@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  get '/' => 'site#home'
-  root to: "home#index"
- 
+  root to: "adverts#index"
+
+  resources :adverts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
