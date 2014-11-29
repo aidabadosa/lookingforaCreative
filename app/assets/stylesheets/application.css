@@ -29,6 +29,7 @@ nav {
 nav ul {
 	display: block;
 	float: right;
+	text-decoration: none;
 }
 nav ul li {
 	text-decoration: none;
@@ -36,6 +37,8 @@ nav ul li {
 	margin-right: 5px;
 
 }
+
+
 
 .clearfix:before, .clearfix:after {
  content: " ";
