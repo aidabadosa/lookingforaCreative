@@ -1,5 +1,7 @@
 class Profile < ActiveRecord::Base
   validates :name, presence: true
 
-  has_many :profiles
+  belongs_to :user
+  has_many :profiles 
+  has_and_belongs_to_many :adverts
 end
