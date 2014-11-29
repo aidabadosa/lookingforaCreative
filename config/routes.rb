@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "adverts#index"
+  # get '/adverts/:index => adverts#show'
+  # root to: "users#index"
 
   resources :adverts
 
