@@ -5,6 +5,7 @@
 
 <% if current_user %>
   <p><%= link_to 'Contact', '#' %></p>
+  <% f.association :check_boxes %>
 <% else %>
   <p>Not registered!</p>
 <% end %>
