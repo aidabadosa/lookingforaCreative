@@ -1,8 +1,9 @@
-<h1>Adverts</h1>
-<ul>
+<h2>Adverts</h2>
+<ul id="adverts">
 <% @adverts.each do |advert| %>
   <li><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %></li>
 <% end %>
 </ul>
 
-<p><%= link_to 'New advert', new_advert_path %></p>
+<p><button type=""><%= link_to 'New advert', new_advert_path %></button</p>
+

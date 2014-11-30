@@ -30,7 +30,6 @@ nav {
 	background-color: mintcream;
 }
 nav ul {
-	display: block;
 	float: right;
 	text-decoration: none;
 }
@@ -39,6 +38,22 @@ nav ul li {
 	display: inline-block;
 	margin-right: 5px;
 
+}
+
+ul #adverts {
+	text-decoration: none;
+	color: teal;
+	font-family: arial;
+}
+
+h2 {
+	font-family: Arial;
+	text-align: center;
+	color: teal;
+}
+
+p button {
+	margin-left: 20px;
 }
 
 
