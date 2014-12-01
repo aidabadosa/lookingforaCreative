@@ -19,7 +19,8 @@
 
 body {
 	background-color: lightyellow;
-	font-family: Garamond;
+	font-family: arial;
+	color: teal;
 }
 header {
 	background-color: mintcream;
@@ -32,18 +33,22 @@ nav {
 nav ul {
 	float: right;
 	text-decoration: none;
+	display: inline-block;
+	margin-right: 20px;
+	list-style: none;
 }
 nav ul li {
 	text-decoration: none;
-	display: inline-block;
 	margin-right: 5px;
-
+	display: inline-block;
 }
 
-ul #adverts {
+.adverts {
 	text-decoration: none;
-	color: teal;
+ 	color: teal;
 	font-family: arial;
+	overflow: hidden;
+	list-style:none;
 }
 
 h2 {

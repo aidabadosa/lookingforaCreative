@@ -3,7 +3,8 @@
 <p><strong>Title:</strong> <%= @advert.title %></p>
 <p><%= @advert.description %></p>
 <p><strong>Profiles</strong></p>
-<ul>
+<p><%= User.find(@advert.user_id).name %></p>
+<ul class="profile">
 	<% @advert.profiles.each do |profile| %>
 	<li><%= profile.name %>	</li>
 	<% end %>

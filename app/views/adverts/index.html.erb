@@ -1,7 +1,7 @@
 <h2>Adverts</h2>
-<ul id="adverts">
+<ul>
 <% @adverts.each do |advert| %>
-  <li><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %></li>
+  <li class="adverts"><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %></li>
 <% end %>
 </ul>
 

@@ -3,9 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-ul #adverts{
-	text-decoration: none
+.profile {
+    overflow: hidden;
+    list-style: none;
 }
+
+
+
 
 .clearfix:before, .clearfix:after {
  content: " ";
