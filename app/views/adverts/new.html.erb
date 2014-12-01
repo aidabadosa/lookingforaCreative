@@ -3,8 +3,8 @@
 <%= simple_form_for @advert do |f| %>
   <%= f.input :title %>
   <%= f.input :description %>
-  <%= f.association :profiles %>
-  <%= f.button %>
+  <%= f.association :profiles, as: :check_boxes %>
+  <%= f.button :submit %>
 <% end %>
 
 <p><%= link_to 'Go back', adverts_path %></p>
