@@ -3,18 +3,61 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+
+h1 {
+	text-align: center;
+}
+
+.title {
+	margin-left: 15px;
+}
+.description {
+	margin-left: 15px;
+}
+
+.profiles {
+	margin-left: 15px;
+}
 .profile {
     overflow: hidden;
     list-style: none;
 }
 
+.textlinks {
+margin-left: 15px;	
+}
 
+.string.optional.control-label {
+	margin-left: 30px;
+}
 
+#advert_title {
+	width: 300px;
+	height: 30px;
+	margin-left: 30px;
+}
+#advert_description {
+	width: 800px;
+	height: 200px;
+	margin-left: 30px;
+}
 
+.form-group.check_boxes.optional.advert_profiles {
+margin-left: 30px;
+}
 .clearfix:before, .clearfix:after {
  content: " ";
  display: table;
 }
 .clearfix:after{
  clear: both;
+}
+
+.btn.btn-default {
+	margin-left: 30px;
+}
+p a {
+	margin-top: 40px;
+	margin-left: 30px;
 }

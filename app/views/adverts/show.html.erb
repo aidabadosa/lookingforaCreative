@@ -1,8 +1,8 @@
 <h2>Advert</h2>
 
-<p><strong>Title:</strong> <%= @advert.title %></p>
-<p><%= @advert.description %></p>
-<p><strong>Profiles</strong></p>
+<p class="title"><strong>Title:</strong> <%= @advert.title %></p>
+<p class="description"><%= @advert.description %></p>
+<p class="profiles"><strong>Profiles</strong></p>
 <p><%= User.find(@advert.user_id).name %></p>
 <ul class="profile">
 	<% @advert.profiles.each do |profile| %>
@@ -11,10 +11,10 @@
 </ul>
 
 <% if current_user %>
-  <p><%= link_to 'Contact', '#' %></p>
+  <p class="textlinks"><%= link_to 'Contact', '#' %></p>
 
 <% else %>
   <p>Not registered!</p>
 <% end %>
 
-<p><%= link_to 'Go back', adverts_path %></p>
+<p class="textlinks"><%= link_to 'Go back', adverts_path %></p>

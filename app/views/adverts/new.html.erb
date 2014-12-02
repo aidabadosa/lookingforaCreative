@@ -2,7 +2,7 @@
 
 <%= simple_form_for @advert do |f| %>
   <%= f.input :title %>
-  <%= f.input :description %>
+  <%= f.input :description, id: "advert_description" %>
   <%= f.association :profiles, as: :check_boxes %>
   <%= f.button :submit %>
 <% end %>
