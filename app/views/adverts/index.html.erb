@@ -1,10 +1,12 @@
 <h2>Adverts</h2>
 <ul>
 <% @adverts.each do |advert| %>
+<% profiles = [] %>
   <li class="adverts"><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %>  
-  	<%advert.profiles.each do |profile| %>
-		is looking for a - <%= profile.name %> 
+  	is looking for a <%advert.profiles.each do |profile| %>
+		 <% profiles.push("<strong>#{profile.name}</strong>") %>
   	<% end %>
+  	<%= profiles.join(" & a ").html_safe %>
   	<p class="description written"><%= advert.description %></p>
 
 
