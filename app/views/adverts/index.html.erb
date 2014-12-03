@@ -1,7 +1,14 @@
 <h2>Adverts</h2>
 <ul>
 <% @adverts.each do |advert| %>
-  <li class="adverts"><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %> - <%=advert.user.profile_id %></li>
+  <li class="adverts"><%= link_to advert.title, advert_path(advert) %> - <%= advert.user.name %>  
+  	<%advert.profiles.each do |profile| %>
+		is looking for a - <%= profile.name %> 
+  	<% end %>
+  	<p class="description written"><%= advert.description %></p>
+
+
+  </li>
 <% end %>
 </ul>
 

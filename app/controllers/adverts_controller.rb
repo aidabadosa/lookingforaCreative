@@ -3,7 +3,7 @@ class AdvertsController < ApplicationController
   before_filter :authenticate_user!, except: [:show, :index]
 
   def index
-    @adverts = Advert.order(id: :desc).limit(2)
+    @adverts = Advert.order(id: :desc).limit(100)
   end
 
   def show
