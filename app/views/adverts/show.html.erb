@@ -2,23 +2,28 @@
 
 <p class="title"><strong>Title:</strong> <%= @advert.title %></p>
 <p class="description"><%= @advert.description %></p>
+<p class = "publisher"><%= User.find(@advert.user_id).name %></p>
 <p class="profiles"><strong>Profiles</strong></p>
-<p><%= User.find(@advert.user_id).name %></p>
 <ul class="profile">
 	<% @advert.profiles.each do |profile| %>
 	<li><%= profile.name %>	</li>
 	<% end %>
 </ul>
 
-<p class="textlinks"><%= link_to 'Contact', '#' %></p>
+<!-- <p class="textlinks"><button><%= link_to 'Contact', '#' %></button></p>  -->
 <% if current_user %>
-  <%= simple_form_for :response, url: advert_response_path(@advert) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :body, as: :text %>
-    <%= f.submit 'Send email!' %>
-  <% end %>
+	<% if current_user.id !=  @advert.user_id %>
+  		<%= simple_form_for :response, url: advert_response_path(@advert) do |f| %>
+	    	<p class="responsername"><%= f.input :name %></p>
+	    	<p class="responsertext"><%= f.input :body, as: :text %>
+	    	<%= f.submit 'Send email!' %>
+  		<% end %>
+  	<% end %>
 <% else %>
   <p>Not registered!</p>
 <% end %>
 
-<p class="textlinks"><%= link_to 'Go back', adverts_path %></p>
+
+
+
+<p class="goback"><%= link_to 'Go back', adverts_path %></p>
