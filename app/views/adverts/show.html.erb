@@ -10,9 +10,13 @@
 	<% end %>
 </ul>
 
+<p class="textlinks"><%= link_to 'Contact', '#' %></p>
 <% if current_user %>
-  <p class="textlinks"><%= link_to 'Contact', '#' %></p>
-
+  <%= simple_form_for :response, url: advert_response_path(@advert) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :body, as: :text %>
+    <%= f.submit 'Send email!' %>
+  <% end %>
 <% else %>
   <p>Not registered!</p>
 <% end %>

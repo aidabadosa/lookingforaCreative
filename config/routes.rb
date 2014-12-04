@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   # get '/adverts/:index => adverts#show'
   # root to: "users#index"
 
-  resources :adverts
+  resources :adverts do
+    resource :response, only: :create
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
